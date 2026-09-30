@@ -1,0 +1,13 @@
+# Java / Maven builds
+backend/demo/target/
+.classpath
+.project
+.settings/
+*.log
+
+# VS Code workspace files
+.vscode/
+
+# OS generated files
+Thumbs.db
+.DS_Store

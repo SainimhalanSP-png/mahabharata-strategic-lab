@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <title>Mahabharata: Strategic Decision Lab</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav aria-label="Main">
+    <div class="wrap">
+        <!-- Hamburger Icon (Moved to Left) -->
+        <div class="menu-toggle" id="mobile-menu" onclick="toggleMenu(event)">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+
+        <!-- Logo (Moved to Right) -->
+        <b>STRATEGIC LAB</b>
+
+        <!-- The Links -->
+        <div class="nav-links" id="nav-links">
+            <a href="#" onclick="navigateTo('home'); return false;">Home</a>
+            <a href="#" onclick="navigateTo('context'); return false;">Context</a>
+            <a href="#" onclick="navigateTo('lab'); return false;">Strategic Lab</a>
+            <a href="#" onclick="navigateTo('algorithms'); return false;">Algorithms</a>
+            <a href="#" onclick="navigateTo('compare'); return false;">Vs Algorithm</a>
+            <a href="#" onclick="navigateTo('results'); return false;">Results</a>
+            <a href="#" onclick="navigateTo('lesson'); return false;">Lesson</a>
+            <a href="#" onclick="navigateTo('research'); return false;">Research</a>
+            <a href="#" onclick="navigateTo('testing'); return false;">Testing</a>
+            <a href="#" onclick="navigateTo('references'); return false;">Team & Refs</a>
+        </div>
+    </div>
+</nav>
+
+<main id="app-container">
+    <!-- HOME SECTION -->
+    <section id="home" class="page-section active">
+        <div class="wrap hero-grid">
+            <div>
+                <p class="subtitle">Mahabharata: Strategic Decision Lab</p>
+                <h1>STRATEGY BEYOND THE EPIC</h1>
+                <p class="lede">What happens when an ancient strategic situation becomes a computational decision problem?</p>
+                <div class="row" style="margin-top: 2rem;">
+                    <button class="btn primary" onclick="navigateTo('lab')">[ ENTER THE STRATEGIC LAB ]</button>
+                    <button class="btn" onclick="navigateTo('algorithms')">See the algorithms</button>
+                </div>
+            </div>
+            <svg class="wheel" viewBox="0 0 400 400" role="img" aria-label="A wheel of seven concentric rings">
+                <circle class="ring r1" cx="200" cy="200" r="190" stroke-dasharray="1 13"/>
+                <circle class="ring r2" cx="200" cy="200" r="163" stroke-dasharray="1 12"/>
+                <circle class="ring r3" cx="200" cy="200" r="136" stroke-dasharray="1 11"/>
+                <circle class="ring r4" cx="200" cy="200" r="109" stroke-dasharray="1 10"/>
+                <circle class="ring r5" cx="200" cy="200" r="82" stroke-dasharray="1 9"/>
+                <circle class="ring r6" cx="200" cy="200" r="55" stroke-dasharray="1 8"/>
+                <circle class="ring r7" cx="200" cy="200" r="30" stroke-dasharray="1 6"/>
+                <path class="way" d="M10 200 C 10 60, 200 8, 330 70 C 400 180, 320 330, 200 335 C 100 330, 70 240, 100 170 C 130 100, 230 90, 262 160 C 285 215, 220 250, 200 220 C 192 205, 200 200, 200 200"/>
+                <circle class="core" cx="200" cy="200" r="7"/>
+            </svg>
+        </div>
+        <div class="wrap" style="margin-top: 4rem;">
+            <div class="three">
+                <div class="panel card-hover"><b>Decision Making : </b><span>Decide under strict constraints</span></div>
+                <div class="panel card-hover"><b>Algorithms : </b><span>Compare computational strategies</span></div>
+                <div class="panel card-hover"><b>Mahabharata : </b><span>Learn the core strategic insight</span></div>
+            </div>
+            <h3 style="margin-top:4rem">From Epic to Algorithm</h3>
+            <ul class="chain">
+                <li>Mahabharata</li><li>Strategic situation</li><li>Contemporary problem</li><li>Mathematical model</li>
+                <li>Algorithm</li><li>Interactive simulation</li><li>Decision analysis</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- CONTEXT SECTION -->
+    <section id="context" class="page-section">
+        <div class="wrap">
+            <h2>The Context: Chakravyūha</h2>
+            <p class="lede">We use one episode from the epic: the Chakravyūha formation on the thirteenth day of the Kurukshetra war.</p>
+            <div class="two">
+                <div class="panel">
+                    <ul class="facts">
+                        <li><b>What it is : </b>A military formation of concentric rings of warriors. Popular retellings describe seven tiers, arranged to draw in and trap those who enter.</li>
+                        <li><b>Why entering is difficult : </b>Each ring has its own defenders and only a few openings, so a route that looks short from outside can be blocked or costly inside.</li>
+                        <li><b>Incomplete information : </b>Abhimanyu knew how to enter the formation but not how to leave it.</li>
+                        <li><b>Coordination : </b>The plan depended on other warriors following through the opening he made. When held back, he was alone.</li>
+                        <li><b>Consequences of poor decisions : </b>An entry with no exit plan and no support turned a bold move into a trap.</li>
+                    </ul>
+                </div>
+                <div class="panel">
+                    <h3>Day 13 in five steps</h3>
+                    <ol class="timeline">
+                        <li>Drona arranges the Chakravyūha.</li>
+                        <li>Abhimanyu agrees to open a way in, knowing the entry but not the exit.</li>
+                        <li>He breaks into the formation; those following him are held at the gate.</li>
+                        <li>Deep inside, he fights alone and is surrounded.</li>
+                        <li>He falls. The episode is remembered as a lesson on planning, information and support.</li>
+                    </ol>
+                </div>
+            </div>
+            
+            <h3 style="margin-top:4rem">Source Record</h3>
+            <div class="panel scroll"><table>
+                <tr><th>Parva</th><th>Adhyāya / Section</th><th>Episode / Passage</th><th>Source</th></tr>
+                <tr>
+                    <td>Drona Parva</td>
+                    <td><span class="tag" style="border-color:var(--red); color:var(--red)">to complete</span> Section/Chapter Number</td>
+                    <td>Abhimanyu enters the Chakravyūha (Day 13)</td>
+                    <td><span class="tag" style="border-color:var(--red); color:var(--red)">to complete</span> Translation / Edition Consulted</td>
+                </tr>
+            </table></div>
+            <p class="note" style="margin-top:.5rem">Fill the marked cells from the exact edition you read.</p>
+            
+            <h3 style="margin-top:4rem">The contemporary problem</h3>
+            <p>People often make decisions where information is incomplete, resources are limited, risks differ between choices, and several possible actions lead to different outcomes.</p>
+            <div class="two" style="margin-top: 2rem;">
+                <div class="panel"><h3>Existing approaches</h3><ul class="chain vertical"><li>Human intuition</li><li>Trial and error</li><li>Potentially inconsistent decisions</li></ul></div>
+                <div class="panel"><h3>Our approach</h3><ul class="chain vertical"><li>Represent the situation as a computational model</li><li>Apply algorithms</li><li>Compare possible strategies</li><li>Measure the resulting outcome</li></ul></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LAB SECTION -->
+    <section id="lab" class="page-section">
+        <div class="wrap">
+            <h2>Strategic Lab</h2>
+            <p class="lede">Start at S on the outer wheel and reach the centre G. Build your route, allocate resources, then run algorithms.</p>
+            <div class="lab-grid">
+                <div>
+                    <div class="board"><canvas id="cv" width="1040" height="1040" aria-label="Battlefield grid."></canvas></div>
+                    <div class="legend panel" style="margin-top: 1rem; display: flex; flex-wrap: wrap; gap: 1rem;">
+                        <span><i style="background:#161b22"></i> Open (1)</span>
+                        <span><i style="background:#2d2417"></i> Patrolled (3)</span>
+                        <span><i style="background:#3a171e"></i> Elite guard (6)</span>
+                        <span><i style="background:#0a0c10"></i> Wall</span>
+                        <span><i style="background:#D4AF37"></i> Your route</span>
+                        <span><i style="background:#3fc4ae"></i> BFS</span>
+                        <span><i style="background:#e9e4d4"></i> Dijkstra</span>
+                    </div>
+                </div>
+                <div>
+                    <div class="panel">
+                        <h3>Controls</h3>
+                        <div class="row">
+                            <button class="btn small" id="runBfs">Run BFS</button>
+                            <button class="btn small" id="runDij">Run Dijkstra</button>
+                            <button class="btn small" id="undo">Undo step</button>
+                            <button class="btn small" id="reset">Reset all</button>
+                            <button class="btn small" id="fromBfs">Start from BFS</button>
+                        </div>
+                        <label class="switch"><input type="checkbox" id="riskMode"> Risk mode: show cell costs and sectors</label>
+                    </div>
+                    <div class="panel">
+                        <h3>Greedy resource allocation</h3>
+                        <p class="note" style="margin:0 0 .5rem">Resources: <b id="resTotal">10</b>. Left: <b id="resLeft">10</b>.</p>
+                        <div class="scroll"><table class="alloc" id="allocTable"></table></div>
+                        <div class="row" style="margin-top:.6rem">
+                            <button class="btn small primary" id="runGreedy">Run greedy algorithm</button>
+                            <button class="btn small" id="clearAlloc">Clear</button>
+                        </div>
+                        <p id="greedyOut" class="note" style="margin-top:.6rem"></p>
+                    </div>
+                    <div class="panel" style="margin-top:1rem; border-color: var(--teal);">
+                        <h3>Live Analysis</h3>
+                        <div id="live"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ALGORITHMS SECTION -->
+    <section id="algorithms" class="page-section">
+        <div class="wrap">
+            <h2>Algorithmic Engine</h2>
+            <p class="lede">Three algorithms running live on the computational graph.</p>
+            <div class="cards" id="algoCards"></div>
+            
+            <h3 style="margin-top:4rem">Decision Score Architecture</h3>
+            <p class="formula">Score = 40% Efficiency + 30% Risk management + 20% Resource usage + 10% Coordination</p>
+            <div class="panel scroll"><table style="width: 100%;">
+                <tr><th>Component</th><th>Computational Logic (0 to 100)</th></tr>
+                <tr><td>Efficiency</td><td>100 × (Dijkstra minimum cost ÷ your route cost)</td></tr>
+                <tr><td>Risk management</td><td>100 × (1 − exposure ÷ 40), where exposure is sum of (cell cost − 1)</td></tr>
+                <tr><td>Resource usage</td><td>100 × threat removed ÷ total threat (23)</td></tr>
+                <tr><td>Coordination</td><td>Average share of each route step's sector that has been funded</td></tr>
+            </table></div>
+            <p class="note" style="margin-top:1rem">Worked example score based on default metrics: <b id="exScore"></b>.</p>
+        </div>
+    </section>
+
+    <!-- COMPARE SECTION -->
+    <section id="compare" class="page-section">
+        <div class="wrap">
+            <h2>Player vs Algorithm</h2>
+            <div id="cmpBody" class="panel"></div>
+        </div>
+    </section>
+
+    <!-- RESULTS SECTION -->
+    <section id="results" class="page-section">
+        <div class="wrap">
+            <h2>Simulation Result</h2>
+            <div id="resBody"></div>
+        </div>
+    </section>
+
+    <!-- LESSON SECTION -->
+    <section id="lesson" class="page-section">
+        <div class="wrap">
+            <h2>What does the epic teach us?</h2>
+            <div class="lessons" style="margin-top: 2rem;">
+                <div class="panel"><b>Strategy : </b>Planning must account for the structure of the situation.</div>
+                <div class="panel"><b>Information : </b>Decisions made with incomplete information can increase risk.</div>
+                <div class="panel"><b>Coordination : </b>Individual action may not be sufficient in complex environments.</div>
+                <div class="panel"><b>Consequences : </b>A locally attractive decision may produce a worse global outcome.</div>
+            </div>
+            <div class="panel" style="margin-top: 3rem; text-align: center; border-color: var(--teal);">
+                <ul class="chain" style="justify-content: center;">
+                    <li>Chakravyūha</li>
+                    <li>Complex strategic environment</li>
+                    <li>Incomplete information</li>
+                    <li>Evaluate alternatives</li>
+                    <li>Algorithmic decision modelling</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- RESEARCH SECTION -->
+    <section id="research" class="page-section">
+        <div class="wrap">
+            <h2>Research & Existing Work</h2>
+            <div class="panel scroll"><table>
+                <tr><th>Existing work</th><th>What it does</th><th>Limitation / gap</th><th>Our difference</th></tr>
+                <tr><td>Legend of Abhimanyu (LoA) [R1]</td><td>Action-adventure retelling of day 13</td><td>Built as gameplay; does not expose decision logic as a model.</td><td>Decision simulation with visible algorithms</td></tr>
+                <tr><td>Chakravyuha board game [R2]</td><td>Asymmetric board game strategy</td><td>No algorithmic benchmark to compare choices against.</td><td>Player choices compared with Dijkstra/Greedy</td></tr>
+                <tr><td>Chand, "Mahabharata as Strategic Guide" [R3]</td><td>Descriptive analysis of strategy</td><td>A written analysis, not interactive.</td><td>Interactive algorithmic lab</td></tr>
+            </table></div>
+
+            <div class="two" style="margin-top: 3rem;">
+                <div class="panel">
+                    <h3>Identified Gap</h3>
+                    <p>Based on our review of the selected existing works, we identified comparatively less emphasis on presenting Mahabharata-inspired strategic situations as interactive computational decision problems where users can compare their decisions with algorithmic strategies.</p>
+                </div>
+                <div class="panel">
+                    <h3>Future Scope</h3>
+                    <ul class="chain vertical">
+                        <li>Multiple Mahabharata scenarios</li>
+                        <li>Minimax and adversarial decision-making</li>
+                        <li>Multi-agent simulation</li>
+                        <li>Dynamic enemy behaviour</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTING SECTION -->
+    <section id="testing" class="page-section">
+        <div class="wrap">
+            <h2>Testing & Validation</h2>
+            <div class="panel">
+                <h3>Automated Algorithm Checks</h3>
+                <div class="row" style="margin-bottom:1rem">
+                    <button class="btn small primary" id="runTests">Run Validations</button>
+                    <span id="testSummary" class="note" style="align-self:center"></span>
+                </div>
+                <div class="scroll"><table id="testTable"></table></div>
+            </div>
+            <div class="panel" style="margin-top: 2rem;">
+                <h3>User Testing Log</h3>
+                <div class="scroll"><table id="manualTable"></table></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- REFERENCES & TEAM SECTION -->
+    <section id="references" class="page-section">
+        <div class="wrap">
+            <div class="two">
+                <div class="panel">
+                    <h2>Team</h2>
+                <p class="subtitle" style="color: #c5a059; margin-bottom: 15px; font-size: 0.9rem;">Project Contributors & Roles</p>
+                
+                <div id="teamContainer" style="display: flex; flex-direction: column; gap: 12px;">
+                    <!-- Member 1 -->
+                    <div class="team-card" data-id="0" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(197,160,89,0.3); padding: 12px; border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: #c5a059; margin-bottom: 6px; font-weight: bold;">ROLE: Research + Mahabharata Source</div>
+                        <div style="display: flex; gap: 8px;">
+                            <input type="text" class="team-input" data-field="name" placeholder="Full Name" style="flex: 2; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                            <input type="text" class="team-input" data-field="roll" placeholder="Roll No." style="flex: 1; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                        </div>
+                    </div>
+
+                    <!-- Member 2 -->
+                    <div class="team-card" data-id="1" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(197,160,89,0.3); padding: 12px; border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: #c5a059; margin-bottom: 6px; font-weight: bold;">ROLE: Algorithm Implementation</div>
+                        <div style="display: flex; gap: 8px;">
+                            <input type="text" class="team-input" data-field="name" placeholder="Full Name" style="flex: 2; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                            <input type="text" class="team-input" data-field="roll" placeholder="Roll No." style="flex: 1; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                        </div>
+                    </div>
+
+                    <!-- Member 3 -->
+                    <div class="team-card" data-id="2" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(197,160,89,0.3); padding: 12px; border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: #c5a059; margin-bottom: 6px; font-weight: bold;">ROLE: UI/UX + Frontend</div>
+                        <div style="display: flex; gap: 8px;">
+                            <input type="text" class="team-input" data-field="name" placeholder="Full Name" style="flex: 2; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                            <input type="text" class="team-input" data-field="roll" placeholder="Roll No." style="flex: 1; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                        </div>
+                    </div>
+
+                    <!-- Member 4 -->
+                    <div class="team-card" data-id="3" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(197,160,89,0.3); padding: 12px; border-radius: 6px;">
+                        <div style="font-size: 0.8rem; color: #c5a059; margin-bottom: 6px; font-weight: bold;">ROLE: Testing + Documentation</div>
+                        <div style="display: flex; gap: 8px;">
+                            <input type="text" class="team-input" data-field="name" placeholder="Full Name" style="flex: 2; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                            <input type="text" class="team-input" data-field="roll" placeholder="Roll No." style="flex: 1; background: #111; border: 1px solid #333; color: #fff; padding: 6px; border-radius: 4px;">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel">
+                    <h2>References</h2>
+                    <ol class="refs plain" style="font-size: 0.9rem;">
+                        <li>Debroy, B. English translation of the Mahabharata (Critical Edition), 2010 to 2015.</li>
+                        <li>Cormen, T. H., et al. <i>Introduction to Algorithms</i>, 4th ed., MIT Press, 2022.</li>
+                        <li>Dijkstra, E. W. "A note on two problems in connexion with graphs." <i>Numerische Mathematik</i> 1, 1959.</li>
+                        <li>[R1] "Legend of Abhimanyu." ModDB game page.</li>
+                        <li>[R2] "Chakravyuha" (2025), strategy board game listing.</li>
+                        <li>[R3] Chand, D. B. "The Mahabharata as a Strategic Guide." <i>Unity Journal</i> 7(1).</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <div class="wrap" style="text-align: center;">
+        <p class="note">Model results describe this simulation's assumptions only. They are not claims about what happened historically.</p>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
